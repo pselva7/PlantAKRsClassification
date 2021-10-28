@@ -1,6 +1,10 @@
 ## 2021-10-28
-# Classification of the aldo-keto reductase gene superfamily in plants
-To classify plant ado-keto reductase-domain (PF00248) containing proteins via blastp search using RefPlantAKRs.fa dataset
+# Classification of the aldo-keto reductase (AKR) gene superfamily in plants
+To classify plant ado-keto reductase-domain (PF00248) containing proteins (AKRs) via blastp search using RefPlantAKRs.fa dataset
+
+#❗️First, run the script with the example files available in this repository. After successful execuation, retrieve ado-keto reductase-domain (PF00248) containing proteins (AKRs) for your target species. You can retrieve them locally (e.g. by doing hmmsearch against your target proteome) or from any public databases (e.g. https://phytozome-next.jgi.doe.gov/). I prefer the local method (because, we can limit the occurences of non-AKR sequences using gathering threshold option) over the public database (which always includes many non-AKR sequences).
+
+#❗️make sure that the fasta header of your input_ProteinSequence_file contain only sequence id and no other attributes (see TaAKRs.fa).
 
 #❗️Before starting the analysis, make sure that you instal seqkit, blast+ and datamash.
 
@@ -11,8 +15,6 @@ To install blast+ see https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDo
 To install datamash see https://www.gnu.org/software/datamash/download/ or https://anaconda.org/bioconda/datamash
 
 #❗️create a directory and copy your input_ProteinSequence_file, RefPlantAKRs.fa, and PlantAKRClassification.sh in the directory.
-
-#❗️make sure that the fasta header of your input_ProteinSequence_file contain only sequence id and no other attributes (see TaAKRs.fa).
 
 #❗️check line 26 in the PlantAKRClassification.sh file and input the name of your input_ProteinSequence_file. 
 
