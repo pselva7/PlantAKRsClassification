@@ -10,13 +10,13 @@ To install blast+ see https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDo
 
 To install datamash see https://www.gnu.org/software/datamash/download/ or https://anaconda.org/bioconda/datamash
 
-#Depending on seqkit, blast+ and datamash tool installation environment, run the script file.
-
 #❗️create a directory and copy your input_ProteinSequence_file, RefPlantAKRs.fa, and PlantAKRClassification.sh in the directory.
 
 #❗️make sure that the fasta header of your input_ProteinSequence_file contain only sequence id and no other attributes (see TaAKRs.fa).
 
 #❗️check line 26 in the PlantAKRClassification.sh file and input the name of your input_ProteinSequence_file. 
+
+#❗️Depending on the seqkit, blast+ and datamash environment, run the script file.
 
 #❗️once everything is set, just call the script ./PlantAKRClassification.sh in the terminal. You will get the final output within few seconds (or in a minute, based on your query size) if everything is good.
 
