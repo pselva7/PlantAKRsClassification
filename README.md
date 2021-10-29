@@ -30,4 +30,4 @@ To facilitate the classification of AKRs in a new plant species (i.e. the specie
 # Limitations
 The piepline is suitable to classify the AKRs of angiosperms. Classification of AKRs from primitive organisms (e.g. algae) is highly unlikely. And, I have no idea whether the pipeline is usable to classify AKRs from gymnosperms. It is because, the RefPlantAKRs dataset was prepared majorly using angiosperms.
 
-#❗️for any queries reach me at: pselva7@gmail.com
+**#❗️for any queries reach me at: pselva7@gmail.com**
