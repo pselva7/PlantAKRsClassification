@@ -2,12 +2,12 @@
 # Classification of the aldo-keto reductase (AKR) gene superfamily in plants
 Aldo-keto reductase-domain (PF00248) containing proteins (AKRs) are NAD(P)(H)-dependent oxidoreductases of a multigene superfamily that mediate versatile functions in plants ranging from detoxification, metal chelation, potassium ion efflux to specialized metabolism. Based on the homology, functionally characterized AKRs of all phyla are classified into 16 families and 51 subfamilies (as of September 2021); of which, plant AKRs represent four families (i.e. 2, 4, 6 and 13) and six subfamilies (i.e. 2A, 4A, 4B, 4C, 6C and 13D). Information about the latest nomenclature system as well as the characterized/potential AKRs can be obtained from the AKR database (https://hosting.med.upenn.edu/akr/).
 
-Since the AKR nomenclature committee considered only the functionally characterized AKRs for the classification system and that the biological functions of many plant AKRs are yet to be discovered, the actual phylogeny/diversity realm of plant AKRs remains unknown. To uncover the complete repertoire of AKR gene superfamily in plants, a systematic kingdom-wide identification, phylogeny reconstruction, classification and synteny network clustering analyses were performed using 74 diverse plant genomes and identified 14 AKR subgroups. **To view the established phylogeny, see PlantAKRsPhylogeny.svg. To view the synteny networks, see PlantAKRsSyntenyNetwork.cys in Cytoscape or PlantAKRsSyntenyNetwork.gephi in Gephi.**
+Since the AKR nomenclature committee considered only the functionally characterized AKRs for the classification system and that the biological functions of many plant AKRs are yet to be discovered, the actual phylogeny/diversity realm of plant AKRs remains unknown. To uncover the complete repertoire of AKR gene superfamily in plants, a systematic kingdom-wide identification, phylogeny reconstruction, classification and synteny network clustering analyses were performed using 74 diverse plant genomes and identified 14 AKR subgroups. **To view the subgroup distribution, see AKRsDistributionInPlants.pdf. To view the established phylogeny, see PlantAKRsPhylogeny.svg. To view the synteny networks in Cytoscape or Gephi, see PlantAKRsSyntenyNetwork.cys or PlantAKRsSyntenyNetwork.gephi, respectively.**
 
 # Classification of AKRs via blastp search using RefPlantAKRs dataset
 To facilitate the classification of AKRs in a new plant species (i.e. the species not covered in our study), a RefPlantAKRs dataset was prepared with 2044 sequences having 250–550 amino acids in length and only one AKR domain. A pipeline (i.e. PlantAKRsClassification.sh) was then prepared to automate the classification. The pipeline was validated with wheat AKRs (i.e. TaAKRs) as test sample in UBUNTU 18.04.
 
-**Classification proposed here is for gene family characterization studies. If you have any characterized plant AKR, you can check out its subgroup using the materials avialble here. Followed by, you should submit the characterized AKR to the AKR superfamily nomenclature committee (https://hosting.med.upenn.edu/akr/existing/) to get a standardized gene symbol.**
+**Classification proposed here is for gene family characterization studies. If you have any function defined plant AKR, you can check out its subgroup using the materials avialble here. Concurrently, we highly appreciate you to submit the sequence to the AKR superfamily nomenclature committee (https://hosting.med.upenn.edu/akr/existing/) to get a standardized gene symbol.**
 
 # Dependencies
 **Seqkit:** To install it, see https://bioinf.shenwei.me/seqkit/download/ or https://anaconda.org/bioconda/seqkit.
@@ -26,5 +26,8 @@ To facilitate the classification of AKRs in a new plant species (i.e. the specie
 **5.** Depending on the seqkit, blast+ and datamash environment, run the script file. If everything is set, just call the script ./PlantAKRsClassification.sh in the terminal. You will get the final output within few seconds (or in a minute, based on your query size) if everything is good. If you use TaAKRs.fa as query, you will see the results within 2 seconds.
 
 **For more details go through the pipeline which includes detailed comments for each and every step.**
+
+# Limitations
+The piepline is suitable to classify the AKRs of angiosperms. Classification of AKRs from primitive organisms (e.g. algae) is highly unlikely.
 
 #❗️for any queries reach me at: pselva7@gmail.com
