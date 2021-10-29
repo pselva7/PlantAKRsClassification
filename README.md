@@ -15,15 +15,15 @@ To facilitate the classification of AKRs in a new plant species (i.e. the specie
 **Datamash:** To install it, see https://www.gnu.org/software/datamash/download/ or https://anaconda.org/bioconda/datamash.
 
 # Usage
-**1.** Create a directory and copy your input_ProteinSequence_file (and/or TaAKRs.fa), RefPlantAKRs.fa, and PlantAKRCslassification.sh in the directory.
+**1.** Download TaAKRs.fa, RefPlantAKRs.fa, and PlantAKRCslassification.sh files into a new directory. Prepare your query sequences in a file and save it in the same directory.
 
-**2.** First, run the script with TaAKRs.fa (which contains 125 wheat AKRs and 1 non-AKR) available in this repository. After successful execuation, you can run the script with your query sequences. Query sequences (i.e. the ado-keto reductase-domain (PF00248) containing proteins (AKRs) of your target species) can be obtained by locally (e.g. by doing hmmsearch against your target proteome) or by use of any public databases (e.g. https://phytozome-next.jgi.doe.gov/). I prefer the local method (because, we can limit the occurences of non-AKR sequences using gathering threshold option) over the public database (which always includes many non-AKR sequences).
+**2.** Query sequences (i.e. the ado-keto reductase-domain (PF00248) containing proteins (AKRs) of your target species) can be obtained by locally (e.g. by doing hmmsearch against your target proteome) or by using any public databases (e.g. https://phytozome-next.jgi.doe.gov/). I prefer the local method (because, we can limit the occurences of non-AKR sequences using gathering threshold option) over the public database (which always includes many non-AKR sequences).
 
-**3.** Make sure that the fasta header of your input_ProteinSequence_file contain only sequence id and no other attributes (for example, see TaAKRs.fa).
+**3.** Make sure that the fasta header of your query sequences contain only sequence id and no other attributes (for example, see TaAKRs.fa).
 
-**4.** Check line 26 in the PlantAKRsClassification.sh file and input the name of your input_ProteinSequence_file.
+**4.** Check line 26 in the PlantAKRsClassification.sh file and input the name of your query_ProteinSequence_file.
 
-**5.** Depending on the seqkit, blast+ and datamash environment, run the script file. If everything is set, just call the script **./PlantAKRsClassification.sh** in the terminal. You will get the final output within few seconds (or in a minute, based on your query size) if everything is good. If you use TaAKRs.fa as query and engage 10 threads, you will see the results within 2 seconds.
+**5.** Depending on the seqkit, blast+ and datamash environment, run the script file **./PlantAKRsClassification.sh** in the terminal. First, run the script with TaAKRs.fa (which contains 125 wheat AKRs and 1 non-AKR). You will get the results within 2 seconds using 10 threads. After successful execuation, you can run the script with your query sequences. You will get the results within few seconds (based on your query size). 
 
 **For more details go through the pipeline which includes detailed comments for each and every step.**
 
