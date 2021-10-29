@@ -10,7 +10,9 @@ To facilitate the classification of AKRs in a new plant species (i.e. the specie
 **Classification proposed here is for gene family characterization studies. If you have any characterized plant AKR, you can check out its subgroup using the materials avialble here. Followed by, you should submit the characterized AKR to the AKR superfamily nomenclature committee (https://hosting.med.upenn.edu/akr/existing/) to get a standardized gene symbol.**
 
 # Dependencies
-Seqkit, blast+ and datamash. To install seqkit see https://bioinf.shenwei.me/seqkit/download/ or https://anaconda.org/bioconda/seqkit. To install blast+ see https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download or https://anaconda.org/bioconda/blast. To install datamash see https://www.gnu.org/software/datamash/download/ or https://anaconda.org/bioconda/datamash.
+**Seqkit:** To install it, see https://bioinf.shenwei.me/seqkit/download/ or https://anaconda.org/bioconda/seqkit.
+**Blast+:** To install it, see https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download or https://anaconda.org/bioconda/blast.
+**Datamash:** To install it, see https://www.gnu.org/software/datamash/download/ or https://anaconda.org/bioconda/datamash.
 
 # Usage: ./PlantAKRCslassification.sh
 **1.** Create a directory and copy your input_ProteinSequence_file (and/or TaAKRs.fa), RefPlantAKRs.fa, and PlantAKRCslassification.sh in the directory.
