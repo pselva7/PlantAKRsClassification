@@ -15,19 +15,23 @@ To facilitate the classification of AKRs in a new plant species (i.e. the specie
 **Datamash:** To install it, see https://www.gnu.org/software/datamash/download/ or https://anaconda.org/bioconda/datamash.
 
 # Usage
-**1.** Download TaAKRs.fa, RefPlantAKRs.fa, and PlantAKRCslassification.sh files into a new directory. Prepare your query sequences in a file and save it in the same directory.
+**1.** Create a new directory (lets name it as XYZ).
 
-**2.** Query sequences (i.e. the ado-keto reductase-domain (PF00248) containing proteins (AKRs) of your target species) can be obtained by locally (e.g. by doing hmmsearch against your target proteome) or by using any public databases (e.g. https://phytozome-next.jgi.doe.gov/). I prefer the local method (because, we can limit the occurences of non-AKR sequences using gathering threshold option) over the public database (which always includes many non-AKR sequences).
+**2.** Download TaAKRs.fa, RefPlantAKRs.fa, and PlantAKRsClassification.sh files into XYZ.
 
-**3.** Make sure that the fasta header of your query sequences contain only sequence id and no other attributes (for example, see TaAKRs.fa).
+**3.** Open terminal and navigate to XYZ (alternatively you can browse into XYZ and open the terminal there).
 
-**4.** Check line 26 in the PlantAKRsClassification.sh file and input the name of your query_ProteinSequence_file.
+**4.** Depending on the seqkit, blast+ and datamash environment, run the script file using the command **./PlantAKRsClassification.sh** in the terminal. You will get the results within 2 seconds using 10 threads. **Once you get results sucessfully, go to step 5.** Otherwise, make sure whether you run the script in the correct environment, whether the tools are installed successfully and/or whether you export the tool's path to ~/.bashrc.
 
-**5.** Depending on the seqkit, blast+ and datamash environment, run the script file **./PlantAKRsClassification.sh** in the terminal. First, run the script with TaAKRs.fa (which contains 125 wheat AKRs and 1 non-AKR). You will get the results within 2 seconds using 10 threads. After successful execuation, you can run the script with your query sequences. You will get the results within few seconds (based on your query size). 
+**5.** Now, you are ready to classify the AKRs of your target plant species. **If you already have query sequences in a file, go to step 6.** Query sequences (i.e. the ado-keto reductase-domain (PF00248) containing proteins (AKRs) of your target species) can be obtained by hmmsearch against your target proteome or by using the keyword PF00248 from any public databases (e.g. https://phytozome-next.jgi.doe.gov/). I prefer the hmmsearch method (because, here, we can limit the occurences of non-AKR sequences using gathering threshold (--cut_ga) option) over the public database search (which always includes many non-AKR sequences). 
 
-**For more details go through the pipeline which includes detailed comments for each and every step.**
+**6.** Copy your query sequence file into XYZ. Make sure that the fasta header of your query sequences contain only sequence id and no other attributes (for example, see TaAKRs.fa).
+
+**7.** Check line 26 in the PlantAKRsClassification.sh file and input the name of your query_ProteinSequence_file. Followed by, call the script using the command **./PlantAKRsClassification.sh** in the terminal as described in step 4. You will get the results within few seconds based on your query size.
+
+**For more details, go through the pipeline which includes detailed comments for each and every step.**
 
 # Limitations
-The piepline is suitable to classify the AKRs of angiosperms. Classification of AKRs from primitive organisms (e.g. algae) is highly unlikely. And, I have no idea whether the pipeline is usable to classify AKRs from gymnosperms. It is because, the RefPlantAKRs dataset was prepared majorly using angiosperms.
+The piepline is suitable to classify the AKRs of angiosperms. Classification of AKRs from primitive organisms (e.g. algae) is highly unlikely. And, I have no idea whether the pipeline is usable to classify AKRs from gymnosperms. It is because, the RefPlantAKRs dataset was prepared only using angiosperms.
 
 **#❗️for any queries reach me at: pselva7@gmail.com**
