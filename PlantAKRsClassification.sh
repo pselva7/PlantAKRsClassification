@@ -27,7 +27,7 @@ input_ProteinSequence_file=$"TaAKRs.fa"	# ❗️Change the file name TaAKRs.fa w
 
 # BLASTP Variables
 max_target_seqs=$"5"	 # This will return only the top 5 best hits
-threads=$"10"		 # ❗️Change the number as per your system
+threads=$"4"		 # ❗️Change the number as per your system
 outfmt=$"6"		 # Blastp output will be in outformat 6
 evalue=$"1E-05"		 # One of parameter invovled in the assignment of subgroups to the query sequences (stage 1: strict)
 protein_identity1=$"60"	 # One of parameter invovled in the assignment of subgroups to the query sequences (stage 1: strict)
