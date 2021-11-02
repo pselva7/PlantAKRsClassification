@@ -19,9 +19,9 @@ To facilitate the classification of AKRs in a new plant species (i.e. the specie
 
 **1.** Create a new directory (lets name it as XYZ).
 
-**2.** Go to the directory of PlantAKRsClassification-main & copy TaAKRs.fa, RefPlantAKRs.fa, and PlantAKRsClassification.sh files into the newly created XYZ directory.
+**2.** Copy **TaAKRs.fa**, **RefPlantAKRs.fa**, and **PlantAKRsClassification.sh** files from the PlantAKRsClassification-main directory into the newly created XYZ directory.
 
-**3.** Open terminal and navigate to the XYZ directory (alternatively you can browse into XYZ and open the terminal there). Run **chmod +x PlantAKRsClassification.sh** to make the script file as executable (alternatively browse into XYZ --> right click on PlantAKRsClassification.sh --> Properties --> Permissions and tick the Execute: option)
+**3.** Open terminal and navigate to the XYZ directory (alternatively you can browse into XYZ and open the terminal there). Once you navigate to the XYZ directory in the terminal, run **chmod +x PlantAKRsClassification.sh** to make the script file as executable (alternatively browse into XYZ --> right click on PlantAKRsClassification.sh --> Properties --> Permissions and tick the Execute: option).
 
 **4.** Depending on the seqkit, blast+ and datamash environment, run the script file using the command **./PlantAKRsClassification.sh** in the terminal. You will get the results within 2 seconds using 10 threads. **Once you get results sucessfully, go to step 5.** Otherwise, make sure whether you run the script in the correct environment, whether the tools are installed successfully and/or whether you export the tool's path to ~/.bashrc.
 
