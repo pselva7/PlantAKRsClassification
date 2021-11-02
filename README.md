@@ -15,7 +15,7 @@ To facilitate the classification of AKRs in a new plant species (i.e. the specie
 **Datamash:** To install it, see https://www.gnu.org/software/datamash/download/ or https://anaconda.org/bioconda/datamash.
 
 # Usage
-**0.** Download the repostiry. Go to the green background panel **Code** **--> Download ZIP**. The repository will download as **PlantAKRsClassification-main.zip**. Browse to the downloaded directory and unzip it.
+**0.** Download the repostiry. Go to the green background panel **Code** **--> Download ZIP**. The repository will download as PlantAKRsClassification-main.zip. Browse to the downloaded directory and unzip it.
 
 **1.** Create a new directory (lets name it as XYZ).
 
