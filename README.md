@@ -1,4 +1,4 @@
-## 2021-11-01
+## 2021-11-02
 # Classification of the aldo-keto reductase (AKR) gene superfamily in plants
 Aldo-keto reductase-domain (PF00248) containing proteins (AKRs) are NAD(P)(H)-dependent oxidoreductases of a multigene superfamily that mediate versatile functions in plants ranging from detoxification, metal chelation, potassium ion efflux to specialized metabolism. Based on the homology, functionally characterized AKRs of all phyla are classified into 16 families and 51 subfamilies (as of September 2021); of which, plant AKRs represent four families (i.e. 2, 4, 6 and 13) and six subfamilies (i.e. 2A, 4A, 4B, 4C, 6C and 13D). Information about the latest nomenclature system as well as the characterized/potential AKRs can be obtained from the AKR database (https://hosting.med.upenn.edu/akr/).
 
