@@ -1,0 +1,24 @@
+2022-01-06 21:06:31
+
+### Classification completed successfully ###
+
+You can use the TaAKRsClassificationSummary file for further downstreatm process.
+
+Following are some quick stats:
+There were 126 seqeunces in the input query file that includes 125 AKRs and 1 Non-AKR(s).
+
+Group was assigned for all AKR sequences present in the input query file: I 57; II 9; III 3; IV 56.
+
+Subgroup was assigned for 124 of 125 AKR sequences present in the input query file: IA 40; IB 3; IC 3; ID 3; IE 7; IIA 3; IIB 6; IIIA 3; IVA 6; IVB 32; IVD 3; IVF 15.
+
+You can keep the subgroup unclassified AKR(s) (n = 1) as such or assign them subgroup based on further validation using any other logical criteria (e.g. synteny, phylogeny or relaxed homology condition).
+
+Verify whether the Non-AKRs (n = 1) have AKR domain by any means (e.g. verify them in Pfam database: http://pfam.xfam.org/). If they do have AKR domain(s), consider them as group UnC AKRs (i.e. group Unclassified AKRs). You can assign group to the group UnC AKR(s) based on further validation using any other logical criteria (e.g. synteny, phylogeny or relaxed homology condition). After domain check, you can exclude all the Non-AKRs (which would have no AKR domain, no group information and no subgroup information) for all further downstream processess as per your experiment design.
+
+By following the user-defined variable, intermediate files are kept in the Classification directory.
+
+Classification elapsed for 0 hours, 0 minutes and 12 seconds
+
+### END ###
+
+
